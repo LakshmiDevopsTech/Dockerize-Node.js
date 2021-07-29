@@ -1,6 +1,6 @@
 # Dockerizing a Node.js web app
 ## Description
-The goal of this example is to show you how to get a Node.js application into a Docker container. Its a simple "hello world" application using and the container of this web app creating using a sample Dockerfile.
+The goal of this project is to show you how to build a node.js application in a container. It's a simple "hello world" application created using a image from Dockerfile.
 ## Features
 - Its just a small application to understand the creation of Dockerfiles for nodejs application
 - This container will occupy only a small space because the OS using is Alpine.
