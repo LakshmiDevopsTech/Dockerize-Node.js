@@ -45,6 +45,26 @@ RUN npm init -y
 RUN npm install express <------- nodejs module (express) installtion
 EXPOSE 8080 <------------------- For identify the port using in container
 CMD [ "node", "app.js" ] <------ Default command running in container.
+
+```
+## Push Image to Docker Hub
+1. Login to Docker Hub
+```
+docker login <----- Login with your credentials
+
+[root@ip-172-31-33-253 ~]# docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: lakshmidevopstech
+Password:
+```
+2. Create image name with our docker hub username.
+```
+docker image tag nodejs:1 lakshmidevopstech/nodejs:latest
+docker image tag nodejs:1 <username>/<imagename>:<latest_tag>
+```
+3. Docker push
+```
+docker push lakshmidevopstech/nodejs:latest
 ```
 ## Conclusion
 It's just a simple nodejs application for understanding how to write a Dockerfile. If anyone have any douts, please ping me.
